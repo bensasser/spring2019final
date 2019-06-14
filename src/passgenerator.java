@@ -3,15 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package passgenerator;
 
+/**
+ *
+ * @author Student
+ */
 /**
  *
  * @author Benjamin Sasser
  */
 import java.util.*;
 import java.io.*;
-public class PassGenerator {
+public class passgenerator {
 
     /**
      * @param args the command line arguments
@@ -31,7 +34,7 @@ public class PassGenerator {
             String letters = input.nextLine();
             if(letters.equals("yes"))
             {
-                Scanner file = new Scanner(new FileReader("src\\passgenerator\\p_letters.txt"));
+                Scanner file = new Scanner(new FileReader("C:\\Users\\Student\\Documents\\NetBeansProjects\\UI_Password Manager\\src\\p_letters.txt"));
                 while(file.hasNextLine())
                 {
                     String line = file.nextLine();
@@ -49,7 +52,7 @@ public class PassGenerator {
             String caps = input.nextLine();
             if(caps.equals("yes"))
             {
-                Scanner file = new Scanner(new FileReader("src\\passgenerator\\p_caps.txt"));
+                Scanner file = new Scanner(new FileReader("C:\\Users\\Student\\Documents\\NetBeansProjects\\UI_Password Manager\\src\\p_caps.txt"));
                 while(file.hasNextLine())
                 {
                     String line = file.nextLine();
@@ -67,7 +70,7 @@ public class PassGenerator {
             String nums = input.nextLine();
             if(nums.equals("yes"))
             {
-                Scanner file = new Scanner(new FileReader("src\\passgenerator\\p_nums.txt"));
+                Scanner file = new Scanner(new FileReader("C:\\Users\\Student\\Documents\\NetBeansProjects\\UI_Password Manager\\src\\p_nums.txt"));
                 while(file.hasNextLine())
                 {
                     String line = file.nextLine();
@@ -85,7 +88,7 @@ public class PassGenerator {
             String specs = input.nextLine();
             if(specs.equals("yes"))
             {
-                Scanner file = new Scanner(new FileReader("src\\passgenerator\\p_specs.txt"));
+                Scanner file = new Scanner(new FileReader("C:\\Users\\Student\\Documents\\NetBeansProjects\\UI_Password Manager\\src\\p_specs.txt"));
                 while(file.hasNextLine())
                 {
                     String line = file.nextLine();
@@ -109,7 +112,7 @@ public class PassGenerator {
             }
             else
             {
-            
+                System.out.println();
                 System.out.println("Your password is: ");
                 for(int i = 0; i < length1; i++)
                 {
